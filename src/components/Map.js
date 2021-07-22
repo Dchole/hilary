@@ -11,6 +11,7 @@ const MapWithAMarker = withScriptjs(
       {Object.values(locations).map(([lat, lng], index) => (
         <Marker key={index} position={{ lat, lng }} />
       ))}
+      <Marker position={defaultCenter} label="My Location" />
     </GoogleMap>
   ))
 )
